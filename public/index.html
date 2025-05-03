@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haven City Digital</title>
+  <!-- React & ReactDOM -->
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <!-- Framer Motion -->
+  <script src="https://cdn.jsdelivr.net/npm/framer-motion@11.11.11/dist/framer-motion.umd.js"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Babel (for in-browser JSX) -->
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.23.2/babel.min.js"></script>
+  <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradient 15s ease infinite;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-slate-950 text-white min-h-screen font-sans">
+  <div id="root"></div>
+
+  <!-- Your entire React app lives here -->
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+    const { motion } = window.FramerMotion;
+
+    function HavenCityDigital() {
+      // all your hooks, handlers, and JSX (the 394 lines) go right here…
+      // <paste the contents of your previous App.jsx’s function body and return() here>
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<HavenCityDigital />);
+  </script>
+</body>
+</html>

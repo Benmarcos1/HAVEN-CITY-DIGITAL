@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Section wrapper */
+.section {
+  @apply px-6 py-16 max-w-5xl mx-auto;
+}
+
+/* Section titles */
+.section-title {
+  @apply text-4xl font-bold mb-6 text-white;
+}
+
+/* Section body text */
+.section-text {
+  @apply text-lg text-gray-300 leading-relaxed;
+}
+
+/* Input fields */
+.input {
+  @apply p-4 rounded-md bg-slate-700 border border-gray-600 text-white w-full;
+}
+
+/* Buttons */
+button {
+  @apply px-6 py-3 rounded-full font-semibold transition duration-200;
+}
+button:hover {
+  @apply opacity-90;
+}
+
+/* Hero styling override (if you want extra) */
+header {
+  @apply bg-gradient-to-br from-slate-900 to-slate-800;
+}
