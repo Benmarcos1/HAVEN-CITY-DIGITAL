@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'; // ✅ Required for fetch to work in Node.js
+// File: api/call.js
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     const response = await fetch('https://api.synthflow.ai/v1/calls', {
       method: 'POST',
       headers: {
-        Authorization: `Bearer JUbvAVow-wwO1F4i42MXBEiW45BmDQuXzxwHKInx66Q`,
+        Authorization: `Bearer Qax8vcxe8bnS0YaV0z4gbP192dqbVvw5yQ725U3YXn8`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
